@@ -1,0 +1,38 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#control-panel {
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+}
+
+#player {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.row {
+    display: flex;
+}  
+
+.cell {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    
+}
+
+.black {
+    background-color: black;
+}
