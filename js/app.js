@@ -11,18 +11,19 @@ const app = {
         clearButton.addEventListener('click', function(){
             app.drawBoard(valueBoard);
 
-            
-            
         });
+
         document.getElementById('gridSize').addEventListener('input', function () {
 
             valueBoard = document.getElementById('gridSize').value;
             app.drawBoard(valueBoard);
             return valueBoard;
         });
+
+
+    
     },
  
-    
 
     drawBoard : (sizeOfBoard) => {
 
@@ -49,9 +50,14 @@ const app = {
                     cell.classList.add('black');
                 });
 
+                document.getElementById('showGrid').addEventListener('click', function () {
+            
+                    cell.classList.toggle('gridDisplay');
+                });
+
             }
         }
-    },
+    }
 
 };
 

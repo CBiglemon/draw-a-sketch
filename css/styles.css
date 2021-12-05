@@ -91,7 +91,10 @@ body {
 
 .cell {
     box-sizing: border-box;
-    border: 1px solid black;
+}
+
+.gridDisplay {
+    border: 1px solid #a7a7a7;
 }
 
 .black {
