@@ -2,15 +2,24 @@ const app = {
 
     init : () => {
         console.log('init');
-        app.drawBoard(10);
+
+        let valueBoard = 50;
+
+        app.drawBoard(valueBoard);
         
         const clearButton = document.getElementById('clear');
         clearButton.addEventListener('click', function(){
-            app.drawBoard(10);
+            app.drawBoard(valueBoard);
+
+            
+            
         });
+        document.getElementById('gridSize').addEventListener('input', function () {
 
-
-
+            valueBoard = document.getElementById('gridSize').value;
+            app.drawBoard(valueBoard);
+            return valueBoard;
+        });
     },
  
     

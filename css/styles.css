@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'gameover';
+    src: url('../game_over.ttf') format('ttf');
+  }
+
 html {
     width: 100vw;
     height: 100vh;
@@ -14,16 +19,20 @@ body {
 }
 
 #title-container {
-    align-self: center;
-    justify-self: unset;
+    position: absolute;
+    top: 20%;
+    font-family: "gameover";
 }
 
 #title-container:first-child {
-    
+    font-size: 3rem;
+    font-family: "gameover";
     
 }
 
 #control-panel {
+    position: absolute;
+    left: 25%;
     width: 300px;
     height: 500px;
     display: flex;
@@ -82,7 +91,7 @@ body {
 
 .cell {
     box-sizing: border-box;
-
+    border: 1px solid black;
 }
 
 .black {
